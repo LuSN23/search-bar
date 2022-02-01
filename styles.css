@@ -1,0 +1,26 @@
+.search-wrapper {
+    display: flex; /*Initializing the flexbox*/
+    flex-direction: column; /*Redefining the axis to stack on top of each other*/
+    gap: .25rem; /*Distancing the label of the search box*/
+}
+
+input {
+    font-size: 1rem; /*Increasing the size of the letters to be the same of the rest of the page*/
+}
+
+.user-cards {
+    display: grid; /*Initializing grid*/
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1 fr));
+    /*Setting the width size of the cards and the behaviour of auto-fill the page with them*/
+    gap: .25rem; /*Putting a gap between the cards*/
+    margin-top: 1rem; /*Some space of the search bar*/
+}
+
+.card {
+    /*border around cards, background white and some intern space*/
+    border: 1px solid black;
+    background-color: white;
+    padding: .5rem;
+}
+
+
