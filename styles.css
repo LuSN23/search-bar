@@ -34,3 +34,7 @@ input {
     color: #777; /*Changing the color to a more light color to the text*/
 }
 
+/*This class will hide the cards when they are not useful in the search*/
+.hide {
+    display: none;
+}
