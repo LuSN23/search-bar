@@ -17,10 +17,20 @@ input {
 }
 
 .card {
-    /*border around cards, background white and some intern space*/
+    /*Border around cards, background white and some intern space*/
     border: 1px solid black;
     background-color: white;
     padding: .5rem;
 }
 
+/*The class .header inside the class .card*/
+.card > .header {
+    margin-bottom: .25rem;/*Space between name and e-mail*/
+}
+
+/*The class .body inside the class .card*/
+.card > .body {
+    font-size: .8rem; /*Decreasing the size of e-mail font*/
+    color: #777; /*Changing the color to a more light color to the text*/
+}
 
