@@ -15,23 +15,14 @@
     <input type="search" id="search"/>
   </div>
   <!--Div for the users' cards-->
-  <div class="user-cards">
-    <div class="card">
-      <div class="header">My name</div>
-      <div class="body">email@gmail.com</div>
+  <div class="user-cards"></div> <!--Empty because the JavaScript will be populated for us-->
+  <!--To show the data in the page browser-->
+  <template> <!--Holds HTML that is not to be rendered immediately when a page is loaded, 
+  will be instantiated after during runtime using JavaScript-->
+    <div class="card"><!--This is blank to be feeded with the fake data of the API(JSONPlaceholder)-->
+      <div class="header"></div>
+      <div class="body"></div>
     </div>
-    <div class="card">
-      <div class="header">My name</div>
-      <div class="body">email@gmail.com</div>
-    </div>
-    <div class="card">
-      <div class="header">My name</div>
-      <div class="body">email@gmail.com</div>
-    </div>
-    <div class="card">
-      <div class="header">My name</div>
-      <div class="body">email@gmail.com</div>
-    </div>
-  </div>
+  </template>
 </body>
 </html>
