@@ -1,6 +1,6 @@
 //Storing the html element with data-user-template inside the const
 const userCardTemplate = document.querySelector("[data-user-template]");
-
+const userCardContainer = document.querySelector("[data-user-cards-container]");
 //API JSONPlaceholder /users
 //API that you can use to have fake data 
 //Making a request with the fetch API (the fetch request is a promise)
@@ -18,7 +18,8 @@ fetch("https://jsonplaceholder.typicode.com/users")
   const body = card.querySelector("[data-body]");
   header.textContent = user.name; //Taking only the property that we want to show in the html's card
   body.textContent = user.email; //When is setted the textContent replace any child nodes with the string specified
-  console.log(user); //We are going to be using just the name and email properties
+  userCardContainer.append(card); //Show every card with the properties name and email(append attach objects in the last child of the element)
+  //console.log(user); //We are going to be using just the name and email properties
   })
 }) //Other conversion to get our data
 
